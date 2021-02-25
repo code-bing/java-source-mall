@@ -15,6 +15,8 @@ public class ServerChannelInitializer extends ChannelInitializer<SocketChannel> 
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
+        pipeline.addLast(new RequestDecoder());
+        pipeline.addLast(new ResponseEncoder());
         pipeline.addLast(new RpcServerHandler(context));
     }
 }
