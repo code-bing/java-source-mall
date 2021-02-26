@@ -1,6 +1,5 @@
 package io.dobson.rpcx.api;
 
-
 public class RpcxRequest {
     private String serviceClass; // 类名称
     private String method; // 方法名

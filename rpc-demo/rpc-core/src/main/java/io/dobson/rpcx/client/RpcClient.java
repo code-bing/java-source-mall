@@ -55,9 +55,15 @@ public class RpcClient {
             if (!channel.isOpen() || !channel.isActive() || !channel.isWritable()) {
                 log.error("channel 不可用");
             } else {
-                channel.writeAndFlush(JSON.toJSONString(request).getBytes(CharsetUtil.UTF_8)).sync();
-                RpcClientHandler handler = (RpcClientHandler)channel.pipeline().get("clientHandler");
-                return handler.getRpcxResponse();
+                try {
+                    channel.writeAndFlush(JSON.toJSONString(request).getBytes(CharsetUtil.UTF_8)).sync();
+                    RpcClientHandler handler = (RpcClientHandler)channel.pipeline().get("clientHandler");
+                    return handler.getRpcxResponse();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    channel.close();
+                }
+
             }
         }
 
