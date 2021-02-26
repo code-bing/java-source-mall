@@ -62,6 +62,7 @@ public class RpcClient {
                 } catch (Exception e) {
                     e.printStackTrace();
                     channel.close();
+                    channelMap.remove(url);
                 }
 
             }
