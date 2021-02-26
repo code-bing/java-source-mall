@@ -16,7 +16,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>rpc-demo-api</module>
-        <module>rpc-demo-core</module>
+        <module>rpc-core</module>
         <module>rpc-demo-consumer</module>
         <module>rpc-demo-provider</module>
     </modules>

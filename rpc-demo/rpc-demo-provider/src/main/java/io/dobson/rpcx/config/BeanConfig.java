@@ -1,7 +1,7 @@
 package io.dobson.rpcx.config;
 
-import io.dobson.rpcx.StudentService;
-import io.dobson.rpcx.StudentServiceImpl;
+import io.dobson.rpcx.api.StudentService;
+import io.dobson.rpcx.impl.StudentServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

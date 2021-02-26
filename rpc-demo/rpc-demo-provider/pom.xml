@@ -20,7 +20,7 @@
         </dependency>
         <dependency>
             <groupId>io.dobson.rpcx</groupId>
-            <artifactId>rpc-demo-core</artifactId>
+            <artifactId>rpc-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
