@@ -20,6 +20,7 @@
         <module>mall-order</module>
         <module>mall-user</module>
         <module>mall-product</module>
+        <module>mall-common</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

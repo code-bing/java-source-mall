@@ -7,5 +7,6 @@ import lombok.Data;
 @Builder
 public class MallProduct {
     private Integer id;
-    private String name;
+    private String name; // 商品名称
+    private Integer stock; // 库存
 }
