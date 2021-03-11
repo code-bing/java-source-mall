@@ -1,0 +1,10 @@
+server:
+  port: 8088
+dubbo:
+  protocol:
+    name: mall-order
+    port: 21111
+
+  registry:
+    address: zookeeper://localhost:2181
+

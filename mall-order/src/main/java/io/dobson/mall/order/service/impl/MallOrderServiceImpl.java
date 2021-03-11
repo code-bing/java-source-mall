@@ -1,13 +1,13 @@
-package io.dobson.mall.service.impl;
+package io.dobson.mall.order.service.impl;
 
 import java.util.List;
 
 import com.google.common.collect.Lists;
-import io.dobson.mall.entity.MallOrder;
-import io.dobson.mall.service.MallOrderService;
-import org.springframework.stereotype.Service;
+import io.dobson.mall.order.entity.MallOrder;
+import io.dobson.mall.order.service.MallOrderService;
+import org.apache.dubbo.config.annotation.DubboService;
 
-@Service
+@DubboService(version = "1.0.0")
 public class MallOrderServiceImpl implements MallOrderService {
 
     @Override

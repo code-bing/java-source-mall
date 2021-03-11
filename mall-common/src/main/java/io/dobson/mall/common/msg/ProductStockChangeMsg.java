@@ -1,4 +1,4 @@
-package io.dobson.mall.msg;
+package io.dobson.mall.common.msg;
 
 import lombok.Data;
 

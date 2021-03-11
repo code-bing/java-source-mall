@@ -1,4 +1,4 @@
-package io.dobson.mall.entity;
+package io.dobson.mall.product.entity;
 
 import lombok.Builder;
 import lombok.Data;

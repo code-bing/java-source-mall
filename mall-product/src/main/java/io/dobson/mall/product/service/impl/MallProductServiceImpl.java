@@ -1,8 +1,8 @@
-package io.dobson.mall.service.impl;
+package io.dobson.mall.product.service.impl;
 
 import io.dobson.mall.common.DataResult;
-import io.dobson.mall.entity.MallProduct;
-import io.dobson.mall.service.MallProductService;
+import io.dobson.mall.product.entity.MallProduct;
+import io.dobson.mall.product.service.MallProductService;
 
 public class MallProductServiceImpl implements MallProductService {
     @Override
