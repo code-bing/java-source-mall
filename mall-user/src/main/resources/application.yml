@@ -1,9 +1,14 @@
 server:
   port: 8089
+
+spring:
+  application:
+    name: mall-user
 dubbo:
+  scan:
+    base-packages: io.dobson.mall.user
   registry:
     address: zookeeper://localhost:2181
     timeout: 10000
-  protocol:
-    port: 20001
-    name: mall-user
+  metadata-report:
+    address: zookeeper://localhost:2181

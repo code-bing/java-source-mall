@@ -1,10 +1,24 @@
 server:
   port: 8088
-dubbo:
-  protocol:
+spring:
+  application:
     name: mall-order
-    port: 21111
-
+dubbo:
+  scan:
+    base-packages: io.dobson.mall.order
   registry:
     address: zookeeper://localhost:2181
-
+  protocol:
+    name: dubbo
+    port: 12345
+  metadata-report:
+    address: zookeeper://localhost:2181
+  application:
+    qosEnable: true
+    qosPort: 22222
+    qosAcceptForeignIp: true
+    qos-enable-compatible: true
+    qos-host-compatible: localhost
+    qos-port-compatible: 22222
+    qos-accept-foreign-ip-compatible: true
+    qos-host: localhost
