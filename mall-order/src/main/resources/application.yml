@@ -5,7 +5,7 @@ spring:
     name: mall-order
 dubbo:
   scan:
-    base-packages: io.dobson.mall.order.service.impl
+    base-packages: io.dobson.mall.order
   registry:
     address: zookeeper://localhost:2181
   protocol:
