@@ -1,7 +1,7 @@
 package io.dobson.mall.user.controller;
 
 import io.dobson.mall.common.DataResult;
-import io.dobson.mall.order.service.MallOrderService;
+import io.dobson.mall.common.api.MallOrderService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

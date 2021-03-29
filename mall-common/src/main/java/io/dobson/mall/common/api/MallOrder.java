@@ -1,4 +1,4 @@
-package io.dobson.mall.order.entity;
+package io.dobson.mall.common.api;
 
 
 import java.io.Serializable;
