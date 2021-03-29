@@ -5,6 +5,7 @@ import java.util.List;
 import io.dobson.mall.common.api.MallOrder;
 import io.dobson.mall.common.api.MallOrderService;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubboConfig;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
