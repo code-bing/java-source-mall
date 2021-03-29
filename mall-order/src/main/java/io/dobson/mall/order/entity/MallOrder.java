@@ -1,7 +1,9 @@
 package io.dobson.mall.order.entity;
 
 
-public class MallOrder {
+import java.io.Serializable;
+
+public class MallOrder implements Serializable {
     private Integer id;
     private Integer userId;
     private Long orderNo;
@@ -34,5 +36,14 @@ public class MallOrder {
 
     public void setOrderNo(Long orderNo) {
         this.orderNo = orderNo;
+    }
+
+    @Override
+    public String toString() {
+        return "MallOrder{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", orderNo=" + orderNo +
+                '}';
     }
 }
