@@ -1,4 +1,4 @@
-package io.dobson.mall.user.service.iml;
+package io.dobson.mall.user.service.impl;
 
 import io.dobson.mall.common.DataResult;
 import io.dobson.mall.common.api.MallOrderService;
